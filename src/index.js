@@ -8,3 +8,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>
 );
+
+
+// стара версія
+// ReactDOM.render(
+//    <App />,
+//     document.querySelector("#root")
+//     );
