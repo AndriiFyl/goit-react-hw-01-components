@@ -10,12 +10,6 @@ import transactions from '../transactions.json';
 
 
 
-
-
-
-
-
-
 export const App = () => {
   return (
     <div>

@@ -26,6 +26,11 @@
     font-size: 14px;
 }
 
+.icon_location {
+    margin-right: 8px;
+    color: inherit;
+}
+
 .stats {
     display: flex;
     justify-content: center;
@@ -50,8 +55,7 @@ border-right: 1px solid rgb(168, 148, 148);
 }
 
 .label {
-    color: rgb(168, 148, 148);
-    font-size: 14px;
+    color: grey;
     margin-bottom: 7px;
     margin-top: 7px;
 }

@@ -1,5 +1,10 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
+import { GoLocation, GoPerson, GoThumbsup } from "react-icons/go";
+import { BiShow } from "react-icons/bi";
+
+
+
 
 export default function Profile({ username, tag, location, avatar, followers, views, likes }) {
     return (
@@ -14,20 +19,23 @@ export default function Profile({ username, tag, location, avatar, followers, vi
     />
                 <p className={css.name}>{username}</p>
           <p className={css.tag}>{tag}</p>
-                <p className={css.location}>{location}</p>
+          <p className={css.location}>
+            <GoLocation className={css.icon_location} size={18} />
+
+            {location}</p>
   </div>
 
             <ul className={css.stats}>   
     <li className={css.wrapper_item}>
-      <span className={css.label}>Followers</span>
+            <span className={css.label}><GoPerson size={18} /></span>
                     <span className={css.quontity}>{followers}</span>
     </li>
     <li className={css.wrapper_item}>
-      <span className={css.label}>Views</span>
+            <span className={css.label}><BiShow size={18} /></span>
                     <span className={css.quontity}>{views}</span>
     </li>
     <li className={css.wrapper_item}>
-      <span className={css.label}>Likes</span>
+      <span className={css.label}><GoThumbsup size={18}/></span>
                     <span className={css.quontity}>{ likes}</span>
                 </li>
   </ul>
